@@ -1,3 +1,4 @@
+#meandmywork
 
 <!DOCTYPE html>
 <html lang="el">
@@ -11,7 +12,7 @@
     <div class="container">
         <header>
             <h1>Anastasia Anna Pateli</h1>
-            <p>Καλώς ήρθατε στην προσωπική μου ιστοσελίδα</p>
+            <p>welcome to my personal page</p>
         </header>
         <!-- Περιεχόμενο -->
     </div>
