@@ -1,47 +1,45 @@
+# Προσωπική Ιστοσελίδα
+
+Καλώς ήρθατε στην προσωπική μου ιστοσελίδα. Εδώ μπορείτε να βρείτε πληροφορίες για εμένα, την εμπειρία μου και τα στοιχεία επικοινωνίας μου.
+
+## Περιεχόμενα
+- [Προσωπική Ιστοσελίδα](#Προσωπική-Ιστοσελίδα)
+- [Περιεχόμενα](#Περιεχόμενα)
+- [Σχετικά με εμένα](#Σχετικά-με-εμένα)
+- [Εμπειρία](#Εμπειρία)
+- [Στοιχεία Επικοινωνίας](#Στοιχεία-Επικοινωνίας)
+- [Project Setup](#Project-Setup)
+- [Usage](#Usage)
+- [Contributing](#Contributing)
+- [License](#License)
+
+## Σχετικά με εμένα
+Full scholarship graduate from Athens College
+New entry in the School of Architecture
+
+## Εμπειρία
+Προσθέστε την επαγγελματική σας εμπειρία, εκπαίδευση, ή άλλες σχετικές πληροφορίες.
+
+## Στοιχεία Επικοινωνίας
+- Τηλέφωνο: 6937485191
+- Email: annapat2005@gmail.com
+- LinkedIn: [Anastasia Anna Pateli](https://www.linkedin.com/in/anastasia-pateli)
+
+## Project Setup
+Για να ρυθμίσετε το έργο, ακολουθήστε τα παρακάτω βήματα:
+1. Κλωνοποιήστε το αποθετήριο: `git clone https://github.com/AnastasiaPateli/mypages.git`
+2. Ανοίξτε το έργο στον αγαπημένο σας επεξεργαστή κώδικα.
+
+## Usage
+Παραδείγματα χρήσης του έργου:
+```html
 <!DOCTYPE html>
 <html lang="el">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Προσωπική Ιστοσελίδα</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: red; /* Change this to your desired color */
-            color: white;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-        section {
-            margin-bottom: 30px;
-            padding: 20px;
-            background-color: white;
-            border-radius: 5px;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        .contact-info {
-            background-color: #e8f4f8;
-            padding: 15px;
-            border-radius: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -49,23 +47,8 @@
             <h1>Anastasia Anna Pateli</h1>
             <p>Καλώς ήρθατε στην προσωπική μου ιστοσελίδα</p>
         </header>
-
-        <section>
-            <h2>Σχετικά με εμένα</h2>
-            <p>Full schollarship graduate from Athens College
-            New entry in School of Architecture</p>
-        </section>
-
-        <section>
-            <h2>Εμπειρία</h2>
-            <p>Προσθέστε την επαγγελματική σας εμπειρία, εκπαίδευση, ή άλλες σχετικές πληροφορίες.</p>
-        </section>
-
-        <section class="contact-info">
-            <h2>6937485191</h2>
-            <p>Email: annapat2005@gmail.com</p>
-            <p>LinkedIn: Anastasia Anna Pateli</p>
-        </section>
+        <!-- Περιεχόμενο -->
     </div>
 </body>
 </html>
+
