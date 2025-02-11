@@ -30,25 +30,5 @@ New entry in the School of Architecture
 1. Κλωνοποιήστε το αποθετήριο: `git clone https://github.com/AnastasiaPateli/mypages.git`
 2. Ανοίξτε το έργο στον αγαπημένο σας επεξεργαστή κώδικα.
 
-## Usage
-Παραδείγματα χρήσης του έργου:
-```html
-<!DOCTYPE html>
-<html lang="el">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Προσωπική Ιστοσελίδα</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Anastasia Anna Pateli</h1>
-            <p>Καλώς ήρθατε στην προσωπική μου ιστοσελίδα</p>
-        </header>
-        <!-- Περιεχόμενο -->
-    </div>
-</body>
-</html>
+
 
