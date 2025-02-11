@@ -47,13 +47,14 @@
 <body>
     <div class="container">
         <header>
-            <h1>Το Όνομά Μου</h1>
+            <h1>Anastasia Anna Pateli</h1>
             <p>Καλώς ήρθατε στην προσωπική μου ιστοσελίδα</p>
         </header>
 
         <section>
             <h2>Σχετικά με εμένα</h2>
-            <p>Εδώ μπορείτε να γράψετε πληροφορίες για εσάς, την εμπειρία σας, τα ενδιαφέροντά σας κλπ.</p>
+            <p>Full schollarship gratuate from Athens College
+            New entry in School of Architecture</p>
         </section>
 
         <section>
@@ -62,9 +63,9 @@
         </section>
 
         <section class="contact-info">
-            <h2>Επικοινωνία</h2>
-            <p>Email: το.email@σας.εδώ</p>
-            <p>LinkedIn: το.προφίλ.σας</p>
+            <h2>6937485191</h2>
+            <p>Email: annapat2005@gmail.com</p>
+            <p>LinkedIn: Anastasia Anna Pateli</p>
         </section>
     </div>
 </body>
