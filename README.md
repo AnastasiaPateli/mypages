@@ -113,7 +113,7 @@
         </section>
 
         <!-- Button to open the sidebar -->
-        <button class="openbtn" onclick="openNav()">Περιεχόμενα</button>
+    <button class="openbtn" onclick="openNav()">///</button>
 
         <!-- The sidebar -->
         <div id="mySidebar" class="sidebar">
