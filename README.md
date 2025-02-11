@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="el">
 <head>
     <meta charset="UTF-8">
@@ -71,6 +71,21 @@
             right: 25px;
             font-size: 36px;
         }
+        /* Adjust button position */
+        .openbtn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .openbtn:hover {
+            background-color: #3a78c2;
+        }
     </style>
 </head>
 <body>
@@ -98,7 +113,7 @@
         </section>
 
         <!-- Button to open the sidebar -->
-        <button onclick="openNav()">Περιεχόμενα</button>
+        <button class="openbtn" onclick="openNav()">Περιεχόμενα</button>
 
         <!-- The sidebar -->
         <div id="mySidebar" class="sidebar">
@@ -114,6 +129,12 @@
             document.getElementById("mySidebar").style.width = "250px";
         }
 
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+        }
+    </script>
+</body>
+</html>
         function closeNav() {
             document.getElementById("mySidebar").style.width = "0";
         }
