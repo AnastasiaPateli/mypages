@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Προσωπική Ιστοσελίδα</title>
+    <title>Personal Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -92,18 +92,18 @@
     <div class="container">
         <header>
             <h1>Anastasia Anna Pateli</h1>
-            <p>Καλώς ήρθατε στην προσωπική μου ιστοσελίδα</p>
+            <p>Welcome to my personal page</p>
         </header>
 
         <section>
-            <h2>Σχετικά με εμένα</h2>
-            <p>Full scholarship graduate from Athens College
-            New entry in School of Architecture</p>
+            <h2>About me</h2>
+            <p1>Full scholarship graduate from Athens College</p1>
+            <p2>New entry in School of Architecture</p2>
         </section>
 
         <section>
             <h2>Εμπειρία</h2>
-            <p>Προσθέστε την επαγγελματική σας εμπειρία, εκπαίδευση, ή άλλες σχετικές πληροφορίες.</p>
+            <p>2 research programs</p>
         </section>
 
         <section class="contact-info">
@@ -120,7 +120,6 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#about">Σχετικά με εμένα</a>
             <a href="#experience">Εμπειρία</a>
-            <a href="#contact">Στοιχεία Επικοινωνίας</a>
         </div>
     </div>
 
