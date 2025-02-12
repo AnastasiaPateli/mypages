@@ -36,26 +36,11 @@
             }
         }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: rgba(249, 249, 249, 0.9); /* Semi-transparent background */
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            position: relative;
-        }
         .header-text {
             color: white;
             position: fixed;
             bottom: 20px;
             left: 20px;
-        }
-        section {
-            margin-bottom: 30px;
-            padding: 20px;
-            background-color: white;
-            border-radius: 5px;
         }
         h1, h2 {
             color: #333;
@@ -125,14 +110,6 @@
     <div class="zoom-background"></div>
     <div class="header-text">
         <h1>Anastasia Anna Pateli</h1>
-        
-    </div>
-    <div class="container">
-        <section>
-            <h2>About</h2>
-            <p>Welcome to my personal page</p>
-            
-        </section>
     </div>
 
     <div id="mySidebar" class="sidebar">
