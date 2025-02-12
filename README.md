@@ -10,11 +10,22 @@
             line-height: 1.6;
             margin: 0;
             padding: 20px;
-            background-image: url('website%20background%20foto.jpg');
+            background-image: url('croped%20website%20background%20foto.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
+            animation: zoom-in 10s infinite alternate;
         }
+
+        @keyframes zoom-in {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -24,12 +35,12 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         header {
-            text-align: center;
+            text-align: left;
             padding: 20px;
-            background-color: #4a90e2;
             color: white;
-            border-radius: 5px;
-            margin-bottom: 20px;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
         }
         section {
             margin-bottom: 30px;
@@ -107,6 +118,10 @@
             <h1>Anastasia Anna Pateli</h1>
             <p>Welcome to my personal page</p>
         </header>
+        <section>
+            <h2>About me</h2>
+            <p>...</p>
+        </section>
     </div>
 
     <div id="mySidebar" class="sidebar">
@@ -118,7 +133,7 @@
         </div>
     </div>
 
-    <button class="openbtn" onclick="openNav()">☰</button>
+    <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>
 
     <script>
         function openNav() {
