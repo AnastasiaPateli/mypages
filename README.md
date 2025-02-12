@@ -45,11 +45,9 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             position: relative;
         }
-        header {
-            text-align: left;
-            padding: 20px;
+        .header-text {
             color: white;
-            position: absolute;
+            position: fixed;
             bottom: 20px;
             left: 20px;
         }
@@ -125,11 +123,11 @@
 </head>
 <body>
     <div class="zoom-background"></div>
+    <div class="header-text">
+        <h1>Anastasia Anna Pateli</h1>
+        <p>Welcome to my personal page</p>
+    </div>
     <div class="container">
-        <header>
-            <h1>Anastasia Anna Pateli</h1>
-            <p>Welcome to my personal page</p>
-        </header>
         <section>
             <h2>About me</h2>
             <p>...</p>
@@ -158,4 +156,3 @@
     </script>
 </body>
 </html>
-
