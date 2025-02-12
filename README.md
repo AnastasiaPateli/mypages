@@ -87,7 +87,7 @@
             position: fixed;
             top: 20px;
             right: 20px;
-            background-color: #4a90e2;
+            background-color: black; /* Set button to black */
             color: white;
             padding: 10px 15px;
             border: none;
@@ -103,6 +103,11 @@
             align-items: center;
             height: 100%;
             flex-direction: column;
+            color: white; /* Set center content to white */
+        }
+        .sidebar a[href="#"]::after {
+            content: "my pages";
+            color: white; /* Set 'my pages' to white */
         }
     </style>
 </head>
