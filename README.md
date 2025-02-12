@@ -19,7 +19,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('Screenshot%202025-02-12%20202513.png');
+            background-image: url('final%20background%20foto.png');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
