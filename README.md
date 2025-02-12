@@ -118,9 +118,9 @@
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="center-content">
-            <a href="https://example.com/about-me" target="_blank" onclick="window.open('https://example.com/about-me', '_blank')">What you have to know about me</a>
-            <a href="https://example.com/research-programs" target="_blank" onclick="window.open('https://example.com/research-programs', '_blank')">Research Programs</a>
-            <a href="https://example.com/distinctions-praises" target="_blank" onclick="window.open('https://example.com/distinctions-praises', '_blank')">Distinctions and Praises</a>
+            <a href="about-me.html">What you have to know about me</a>
+            <a href="research-programs.html">Research Programs</a>
+            <a href="distinctions-praises.html">Distinctions and Praises</a>
         </div>
     </div>
 
