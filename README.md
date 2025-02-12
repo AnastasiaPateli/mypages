@@ -1,4 +1,3 @@
-
 <html lang="el">
 <head>
     <meta charset="UTF-8">
@@ -104,10 +103,8 @@
             align-items: center;
             height: 100%;
             flex-direction: column;
-            color: white; /* Set center content to white */
         }
-        .sidebar a[href="#"]::after {
-            content: "my pages";
+        a[href="#my-pages"] {
             color: white; /* Set 'my pages' to white */
         }
     </style>
@@ -121,7 +118,7 @@
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="center-content">
-            <a href="#">What you have to know about me</a>
+            <a href="#my-pages">What you have to know about me</a>
             <a href="#">Research Programs</a>
             <a href="#">Distinctions and Praises</a>
         </div>
