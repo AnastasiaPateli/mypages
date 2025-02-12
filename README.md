@@ -10,11 +10,15 @@
             line-height: 1.6;
             margin: 0;
             padding: 20px;
+            background-image: url('website%20background%20foto.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
-            background-color: #f9f9f9;
+            background-color: rgba(249, 249, 249, 0.9); /* Semi-transparent background */
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -109,7 +113,7 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="center-content">
             <a href="#">What you have to know about me</a>
-            <a href="#">Research Programms</a>
+            <a href="#">Research Programs</a>
             <a href="#">Distinctions and Praises</a>
         </div>
     </div>
@@ -121,12 +125,6 @@
             document.getElementById("mySidebar").style.width = "100%";
         }
 
-        function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-        }
-    </script>
-</body>
-</html>
         function closeNav() {
             document.getElementById("mySidebar").style.width = "0";
         }
