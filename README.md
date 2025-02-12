@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="el">
 <head>
     <meta charset="UTF-8">
@@ -103,22 +103,18 @@
             <h1>Anastasia Anna Pateli</h1>
             <p>Welcome to my personal page</p>
         </header>
-        <section>
-            <h2>About me</h2>
-            <p>...</p>
-        </section>
     </div>
 
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="center-content">
-            <a href="#">Choice 1</a>
-            <a href="#">Choice 2</a>
-            <a href="#">Choice 3</a>
+            <a href="#">What you have to know about me</a>
+            <a href="#">Research Programms</a>
+            <a href="#">Distinctions and Praises</a>
         </div>
     </div>
 
-    <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>
+    <button class="openbtn" onclick="openNav()">☰</button>
 
     <script>
         function openNav() {
