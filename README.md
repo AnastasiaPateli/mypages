@@ -53,6 +53,9 @@
             overflow-x: hidden;
             transition: 0.5s;
             padding-top: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .sidebar a {
             padding: 8px 8px 8px 32px;
@@ -71,7 +74,6 @@
             right: 25px;
             font-size: 36px;
         }
-        /* Adjust button position */
         .openbtn {
             position: fixed;
             top: 20px;
@@ -86,6 +88,13 @@
         .openbtn:hover {
             background-color: #3a78c2;
         }
+        .center-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            flex-direction: column;
+        }
     </style>
 </head>
 <body>
@@ -94,38 +103,26 @@
             <h1>Anastasia Anna Pateli</h1>
             <p>Welcome to my personal page</p>
         </header>
-
         <section>
             <h2>About me</h2>
-            <p1>Full scholarship graduate from Athens College</p1>
-            <p2>New entry in School of Architecture</p2>
+            <p>...</p>
         </section>
+    </div>
 
-        <section>
-            <h2>Εμπειρία</h2>
-            <p>2 research programs</p>
-        </section>
-
-        <section class="contact-info">
-            <h2>6937485191</h2>
-            <p>Email: annapat2005@gmail.com</p>
-            <p>LinkedIn: Anastasia Anna Pateli</p>
-        </section>
-
-        <!-- Button to open the sidebar -->
-    <button class="openbtn" onclick="openNav()">///</button>
-
-        <!-- The sidebar -->
-        <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#about">Σχετικά με εμένα</a>
-            <a href="#experience">Εμπειρία</a>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="center-content">
+            <a href="#">Choice 1</a>
+            <a href="#">Choice 2</a>
+            <a href="#">Choice 3</a>
         </div>
     </div>
 
+    <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>
+
     <script>
         function openNav() {
-            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("mySidebar").style.width = "100%";
         }
 
         function closeNav() {
