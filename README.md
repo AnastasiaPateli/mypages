@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="el">
 <head>
     <meta charset="UTF-8">
@@ -43,7 +42,7 @@
             left: 20px;
         }
         h1, h2 {
-            color: #333;
+            color: white;
         }
         .contact-info {
             background-color: #e8f4f8;
