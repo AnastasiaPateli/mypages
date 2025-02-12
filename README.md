@@ -118,9 +118,9 @@
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="center-content">
-            <a href="#my-pages">What you have to know about me</a>
-            <a href="#">Research Programs</a>
-            <a href="#">Distinctions and Praises</a>
+            <a href="https://example.com/about-me" target="_blank">What you have to know about me</a>
+            <a href="https://example.com/research-programs" target="_blank">Research Programs</a>
+            <a href="https://example.com/distinctions-praises" target="_blank">Distinctions and Praises</a>
         </div>
     </div>
 
@@ -130,6 +130,13 @@
         function openNav() {
             document.getElementById("mySidebar").style.width = "100%";
         }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+        }
+    </script>
+</body>
+</html>
 
         function closeNav() {
             document.getElementById("mySidebar").style.width = "0";
