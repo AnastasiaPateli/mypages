@@ -10,6 +10,7 @@
             margin: 0;
             padding: 20px;
             overflow: hidden;
+            color: white; /* Set all text to white */
         }
 
         .zoom-background {
@@ -18,7 +19,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('final%20background%20foto.png');
+            background-image: url('final%20decision.png'); /* Change background image */
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
