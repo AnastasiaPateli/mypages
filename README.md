@@ -137,10 +137,3 @@
     </script>
 </body>
 </html>
-
-        function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-        }
-    </script>
-</body>
-</html>
