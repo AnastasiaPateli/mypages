@@ -125,12 +125,13 @@
     <div class="zoom-background"></div>
     <div class="header-text">
         <h1>Anastasia Anna Pateli</h1>
-        <p>Welcome to my personal page</p>
+        
     </div>
     <div class="container">
         <section>
-            <h2>About me</h2>
-            <p>...</p>
+            <h2>About</h2>
+            <p>Welcome to my personal page</p>
+            
         </section>
     </div>
 
@@ -143,7 +144,7 @@
         </div>
     </div>
 
-    <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>
+    <button class="openbtn" onclick="openNav()">☰</button>
 
     <script>
         function openNav() {
