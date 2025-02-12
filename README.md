@@ -10,10 +10,20 @@
             line-height: 1.6;
             margin: 0;
             padding: 20px;
+            overflow: hidden;
+        }
+
+        .zoom-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             background-image: url('croped%20website%20background%20foto.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
+            z-index: -1;
             animation: zoom-in 10s infinite alternate;
         }
 
@@ -33,6 +43,7 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
         }
         header {
             text-align: left;
@@ -113,6 +124,7 @@
     </style>
 </head>
 <body>
+    <div class="zoom-background"></div>
     <div class="container">
         <header>
             <h1>Anastasia Anna Pateli</h1>
