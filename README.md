@@ -1,140 +1,142 @@
-<html lang="el">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Page</title>
+    <title>Anastasia Anna Pateli - Architect</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
             margin: 0;
-            color: white; /* Set all text to white */
+            font-family: Arial, sans-serif;
         }
-
-        .zoom-background {
-            position: fixed;
-            top: 0;
-            left: 0;
+        .hero {
+            position: relative;
             width: 100%;
-            height: 100%;
-            background-image: url('final%20decision.png'); /* Change background image */
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            z-index: -1;
-            animation: zoom-in 10s infinite alternate;
-        }
-
-        @keyframes zoom-in {
-            0% {
-                transform: scale(1);
-            }
-            100% {
-                transform: scale(1.1);
-            }
-        }
-
-        .header-text {
-            color: white;
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-        }
-
-        .sidebar {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            right: 0;
-            background-color: #111;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
+            height: 100vh;
+            overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-
-        .sidebar a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #818181;
-            display: block;
-            transition: 0.3s;
-        }
-
-        .sidebar a:hover {
-            color: #f1f1f1;
-        }
-
-        .sidebar .closebtn {
+        .background-image {
             position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: zoom-in 10s infinite alternate;
         }
-
-        .openbtn {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background-color: black; /* Set button to black */
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
+        @keyframes zoom-in {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.1);
+            }
         }
-
-        .openbtn:hover {
-            background-color: #3a78c2;
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
         }
-
-        h1 {
-            position: fixed;
+        .name {
+            position: absolute;
             bottom: 20px;
             left: 20px;
             color: white;
+            font-size: 24px;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 50px;
+        }
+        .menu-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        .side-menu {
+            position: fixed;
+            top: 0;
+            right: -250px;
+            width: 250px;
+            height: 100%;
+            background: white;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+            transition: right 0.3s;
+            padding: 20px;
+        }
+        .side-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+        .side-menu li {
+            margin: 20px 0;
+            cursor: pointer;
+        }
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div class="zoom-background"></div>
-    <div class="header-text">
-        <h1>Anastasia Anna Pateli</h1>
+    <div class="hero">
+        <img src="placeholder.jpg" alt="Background Image" class="background-image">
+        <div class="overlay"></div>
+        <h1 class="name">Anastasia Anna Pateli</h1>
+        <img src="logo.png" alt="Logo" class="logo">
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
     </div>
-
-    <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="center-content">
-            <a href="#" onclick="loadContent('about_me')">What you have to know about me</a>
-            <a href="research-programs.html">Research Programs</a>
-            <a href="distinctions-praises.html">Distinctions and Praises</a>
-        </div>
-        </div>
-
-    <button class="openbtn" onclick="openNav()">☰</button>
-
+    
+    <div class="side-menu" id="sideMenu">
+        <button class="close-button" onclick="toggleMenu()">&times;</button>
+        <ul>
+            <li onclick="showContent('about')">What you have to know about me</li>
+            <li onclick="showContent('research')">Past Research Programs</li>
+            <li onclick="showContent('distinctions')">Distinctions and praises</li>
+        </ul>
+    </div>
+    
+    <div class="content" id="content">
+        <p>Select an option from the menu to see details.</p>
+    </div>
+    
     <script>
-        function openNav() {
-            document.getElementById("mySidebar").style.width = "100%";
+        function toggleMenu() {
+            var menu = document.getElementById("sideMenu");
+            if (menu.style.right === "0px") {
+                menu.style.right = "-250px";
+            } else {
+                menu.style.right = "0px";
+            }
         }
-
-        function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-        }
-
-        function loadContent(filename) {
-            fetch(filename)
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById("content").innerHTML = data;
-                    closeNav();
-                })
-                .catch(error => console.error('Error loading content:', error));
+        function showContent(section) {
+            var content = document.getElementById("content");
+            if (section === "about") {
+                content.innerHTML = "<h2>About Me</h2><p>Details about me...</p>";
+            } else if (section === "research") {
+                content.innerHTML = "<h2>Past Research Programs</h2><p>Details about research...</p>";
+            } else if (section === "distinctions") {
+                content.innerHTML = "<h2>Distinctions and Praises</h2><p>Details about distinctions...</p>";
+            }
         }
     </script>
 </body>
