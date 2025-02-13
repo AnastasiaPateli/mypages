@@ -118,7 +118,7 @@
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="center-content">
-            <a href="about-me.html">What you have to know about me</a>
+            <a href="about_me">What you have to know about me</a>
             <a href="research-programs.html">Research Programs</a>
             <a href="distinctions-praises.html">Distinctions and Praises</a>
         </div>
