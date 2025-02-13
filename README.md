@@ -8,8 +8,6 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 20px;
-            overflow: hidden;
             color: white; /* Set all text to white */
         }
 
@@ -42,15 +40,7 @@
             bottom: 20px;
             left: 20px;
         }
-        h1, h2 {
-            color: white;
-        }
-        .contact-info {
-            background-color: #e8f4f8;
-            padding: 15px;
-            border-radius: 5px;
-        }
-        /* Sidebar styles */
+
         .sidebar {
             height: 100%;
             width: 0;
@@ -66,6 +56,7 @@
             justify-content: center;
             align-items: center;
         }
+
         .sidebar a {
             padding: 8px 8px 8px 32px;
             text-decoration: none;
@@ -74,15 +65,18 @@
             display: block;
             transition: 0.3s;
         }
+
         .sidebar a:hover {
             color: #f1f1f1;
         }
+
         .sidebar .closebtn {
             position: absolute;
             top: 0;
             right: 25px;
             font-size: 36px;
         }
+
         .openbtn {
             position: fixed;
             top: 20px;
@@ -94,24 +88,16 @@
             cursor: pointer;
             border-radius: 5px;
         }
+
         .openbtn:hover {
             background-color: #3a78c2;
         }
-        .center-content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            flex-direction: column;
-        }
-        a[href="#my-pages"] {
-            color: white; /* Set 'my pages' to white */
-        }
-        .content {
-            margin-top: 20px;
-            background-color: #222;
-            padding: 20px;
-            border-radius: 5px;
+
+        h1 {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            color: white;
         }
     </style>
 </head>
@@ -128,11 +114,9 @@
             <a href="research-programs.html">Research Programs</a>
             <a href="distinctions-praises.html">Distinctions and Praises</a>
         </div>
-    </div>
+        </div>
 
     <button class="openbtn" onclick="openNav()">☰</button>
-
-    <div id="content" class="content"></div>
 
     <script>
         function openNav() {
