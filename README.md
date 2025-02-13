@@ -107,6 +107,12 @@
         a[href="#my-pages"] {
             color: white; /* Set 'my pages' to white */
         }
+        .content {
+            margin-top: 20px;
+            background-color: #222;
+            padding: 20px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -118,13 +124,15 @@
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="center-content">
-            <a href="about_me">What you have to know about me</a>
+            <a href="#" onclick="loadContent('about_me')">What you have to know about me</a>
             <a href="research-programs.html">Research Programs</a>
             <a href="distinctions-praises.html">Distinctions and Praises</a>
         </div>
     </div>
 
     <button class="openbtn" onclick="openNav()">☰</button>
+
+    <div id="content" class="content"></div>
 
     <script>
         function openNav() {
@@ -133,6 +141,16 @@
 
         function closeNav() {
             document.getElementById("mySidebar").style.width = "0";
+        }
+
+        function loadContent(filename) {
+            fetch(filename)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("content").innerHTML = data;
+                    closeNav();
+                })
+                .catch(error => console.error('Error loading content:', error));
         }
     </script>
 </body>
