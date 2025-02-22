@@ -24,6 +24,7 @@
             max-height: 300px;
             object-fit: cover;
             border-radius: 10px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -55,19 +56,46 @@ School of Architecture, NTUA</h4>
                 <p>A research team work project on a solid with double-ruled surfaces made by industrial flat surfaces. </p>
             </div>
             <div class="column">
-                <img src="L_5_PHOTONS_AAP.jpg" alt="Research Project 1" class="image" onclick="openModal('research1')">
+                <img src="L_5_PHOTONS_AAP.jpg" alt="Research Project 2" class="image" onclick="openModal('research2')">
                 <h4>International Masterclass ”Hands on Particle Physics” </h4>
                 <p>Studied particle therapy (radiation) for cancer treatment and conducted a team-work project analyzing the
 effectiveness of different particles (protons, photons, carbons) using MatRad to suggest a combination of
 a throw angle and a particles that cure cancer cells without damaging the healthy ones</p>
             </div>
             <div class="column">
-                <img src="Crisper cas 9.png" alt="Research Project 1" class="image" onclick="openModal('research1')">
+                <img src="Crisper cas 9.png" alt="Research Project 3" class="image" onclick="openModal('research3')">
                 <h4>Personal Project: ”Genetic engineering and DNA editing to combat genetic diseases” MYP
 (Year 5), Psychico College</h4>
                 <p>A 6-month research project on how CRISPR-Cas9 works and its potential applications for the treatment
 of genetic diseases creating a final product with 3D Design and Printing.</p>
             </div>
+        </div>
+    </div>
+
+    <!-- Modal for "Hyperbolic Paraboloid" project -->
+    <div id="research1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('research1')">&times;</span>
+            <h2>Final Project "Hyperbolic Paraboloid"</h2>
+            <p>This is a team project from the "Geometrical Illustrations" class at the School of Architecture, NTUA. The project explores a solid with double-ruled surfaces made by industrial flat surfaces.</p>
+        </div>
+    </div>
+
+    <!-- Modal for "Hands on Particle Physics" project -->
+    <div id="research2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('research2')">&times;</span>
+            <h2>International Masterclass "Hands on Particle Physics"</h2>
+            <p>This international masterclass focused on particle therapy (radiation) for cancer treatment. We conducted a team project analyzing the effectiveness of different particles (protons, photons, carbons) using MatRad to suggest a combination of throw angle and particle type that could cure cancer cells without damaging healthy ones.</p>
+        </div>
+    </div>
+
+    <!-- Modal for "Genetic engineering and DNA editing" project -->
+    <div id="research3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('research3')">&times;</span>
+            <h2>Personal Project: Genetic Engineering and DNA Editing</h2>
+            <p>This was a 6-month personal research project focusing on CRISPR-Cas9 and its potential applications in treating genetic diseases. The final product involved creating a 3D model and print design to illustrate the gene-editing process.</p>
         </div>
     </div>
 </body>
