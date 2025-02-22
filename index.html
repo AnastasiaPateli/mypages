@@ -11,6 +11,9 @@
         body {
             text-align: center;
             margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
         .container {
             max-width: 800px;
@@ -18,6 +21,10 @@
         }
         .row {
             margin-top: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
         }
         .image {
             width: 100%;
@@ -25,6 +32,53 @@
             object-fit: cover;
             border-radius: 10px;
             cursor: pointer;
+            transition: transform 0.5s ease-in-out;
+        }
+        .image.clicked {
+            transform: translateX(60%) scale(0.8); /* Move the image to the right */
+        }
+        .column {
+            width: 30%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 40%;
+            background-color: rgba(0, 0, 0, 0.8);
+            overflow-y: scroll;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            color: #333;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+        }
+
+        h2, p {
+            margin-bottom: 15px;
         }
     </style>
 </head>
@@ -33,41 +87,22 @@
         <h1>Hi, I am Anastasia Anna Pateli and this is a website about me and my work.</h1>
         <p>I am an undergraduate student in School of Architecture at National Technical University of Athens.</p>
 
-        <div class="row">
-            <div class="six columns">
-                <h3>Intersection Point</h3>
-                <p>A creative 19-year-old student who loves mathematics, design, and philosophy,
-                    but with a personality test that says that 99% of me is core research. 
-                    I can not be only one thing. That is the reason I love Architecture. 
-                    A challenge every day to be something different, to think in a way that you did not yesterday,
-                    to create with a vision that tomorrow will make the world better. </p>
-            </div>
-            <div class="six columns">
-                <img src="Intersection Point.png" alt="Intersection Point" class="image">
-            </div>
-        </div>
-
         <h2>Past Research Programs</h2>
         <div class="row">
             <div class="column">
-                <img src="image0 (5).jpeg" alt="Research Project 1" class="image" onclick="openModal('research1')">
-                <h4>Final Project ”Hyperbolic Paraboloid” Class of ”Geometrical Illustrations” First Semester,
-School of Architecture, NTUA</h4>
-                <p>A research team work project on a solid with double-ruled surfaces made by industrial flat surfaces. </p>
+                <img src="image0 (5).jpeg" alt="Research Project 1" class="image" onclick="openModal('research1', this)">
+                <h4>Final Project "Hyperbolic Paraboloid"</h4>
+                <p>A team project focused on a solid with double-ruled surfaces made by industrial flat surfaces.</p>
             </div>
             <div class="column">
-                <img src="L_5_PHOTONS_AAP.jpg" alt="Research Project 2" class="image" onclick="openModal('research2')">
-                <h4>International Masterclass ”Hands on Particle Physics” </h4>
-                <p>Studied particle therapy (radiation) for cancer treatment and conducted a team-work project analyzing the
-effectiveness of different particles (protons, photons, carbons) using MatRad to suggest a combination of
-a throw angle and a particles that cure cancer cells without damaging the healthy ones</p>
+                <img src="L_5_PHOTONS_AAP.jpg" alt="Research Project 2" class="image" onclick="openModal('research2', this)">
+                <h4>International Masterclass "Hands on Particle Physics"</h4>
+                <p>Studied radiation therapy for cancer and suggested a combination of particles and angles to treat cancer cells.</p>
             </div>
             <div class="column">
-                <img src="Crisper cas 9.png" alt="Research Project 3" class="image" onclick="openModal('research3')">
-                <h4>Personal Project: ”Genetic engineering and DNA editing to combat genetic diseases” MYP
-(Year 5), Psychico College</h4>
-                <p>A 6-month research project on how CRISPR-Cas9 works and its potential applications for the treatment
-of genetic diseases creating a final product with 3D Design and Printing.</p>
+                <img src="Crisper cas 9.png" alt="Research Project 3" class="image" onclick="openModal('research3', this)">
+                <h4>Personal Project: Genetic Engineering and DNA Editing</h4>
+                <p>A 6-month research project on CRISPR-Cas9 and its potential in treating genetic diseases.</p>
             </div>
         </div>
     </div>
@@ -77,7 +112,7 @@ of genetic diseases creating a final product with 3D Design and Printing.</p>
         <div class="modal-content">
             <span class="close" onclick="closeModal('research1')">&times;</span>
             <h2>Final Project "Hyperbolic Paraboloid"</h2>
-            <p>This is a team project from the "Geometrical Illustrations" class at the School of Architecture, NTUA. The project explores a solid with double-ruled surfaces made by industrial flat surfaces.</p>
+            <p>This project investigates a solid with double-ruled surfaces, leveraging industrial flat surfaces to create a hyperbolic paraboloid form. It combines geometry, design, and engineering principles to explore the potential of architectural structures.</p>
         </div>
     </div>
 
@@ -86,18 +121,48 @@ of genetic diseases creating a final product with 3D Design and Printing.</p>
         <div class="modal-content">
             <span class="close" onclick="closeModal('research2')">&times;</span>
             <h2>International Masterclass "Hands on Particle Physics"</h2>
-            <p>This international masterclass focused on particle therapy (radiation) for cancer treatment. We conducted a team project analyzing the effectiveness of different particles (protons, photons, carbons) using MatRad to suggest a combination of throw angle and particle type that could cure cancer cells without damaging healthy ones.</p>
+            <p>This project delves into particle therapy for cancer treatment. By analyzing different particles (protons, photons, and carbons), the research aimed to optimize therapy by adjusting the throw angles and the particles used, ensuring cancer cells are targeted without damaging healthy tissues.</p>
         </div>
     </div>
 
-    <!-- Modal for "Genetic engineering and DNA editing" project -->
+    <!-- Modal for "Genetic Engineering and DNA Editing" project -->
     <div id="research3" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('research3')">&times;</span>
             <h2>Personal Project: Genetic Engineering and DNA Editing</h2>
-            <p>This was a 6-month personal research project focusing on CRISPR-Cas9 and its potential applications in treating genetic diseases. The final product involved creating a 3D model and print design to illustrate the gene-editing process.</p>
+            <p>This project was dedicated to studying CRISPR-Cas9 technology and its potential for gene editing. The goal was to design solutions for genetic diseases through 3D models and printing, illustrating the powerful impact of genetic engineering in medicine.</p>
         </div>
     </div>
+
+    <script>
+        function openModal(modalId, imageElement) {
+            // Move image to the side
+            imageElement.classList.add('clicked');
+            // Show modal
+            document.getElementById(modalId).style.display = "block";
+        }
+
+        function closeModal(modalId) {
+            // Hide modal
+            document.getElementById(modalId).style.display = "none";
+            // Reset image position after closing the modal
+            const image = document.querySelector(`[onclick="openModal('${modalId}', this)"]`);
+            image.classList.remove('clicked');
+        }
+
+        // Close modal if clicked outside
+        window.onclick = function(event) {
+            var modals = document.getElementsByClassName("modal");
+            for (var i = 0; i < modals.length; i++) {
+                if (event.target == modals[i]) {
+                    modals[i].style.display = "none";
+                    const image = document.querySelector(`[onclick="openModal('${modals[i].id}', this)"]`);
+                    image.classList.remove('clicked');
+                }
+            }
+        }
+    </script>
 </body>
 </html>
+
 
